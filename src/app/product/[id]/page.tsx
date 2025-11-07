@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { Product } from "@/types";
 import { productApi } from "@/lib/api";
 import { ProductCardSkeleton } from "@/components/shared/ProductCardSkeleton";
-import { Star, Heart, ShoppingCart, Trash2 } from "lucide-react";
+import { Star, Heart, Trash2 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addToFavorites,

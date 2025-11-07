@@ -34,3 +34,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### About the project
+
+This project is built with Next.js, typescript, tailwind css and shadcn UI.
+It has features:
+_ CRUD (Create, Read, Update and Delete) operations
+_ Search
+_ Infinite Scroll
+_ Add to/Remove from Favorites
+
+### Setup Instruction
+
+- Clone the repository from github => git clone https://github.com/Nuhamin-07/ecommerce-shop.git
+- Then get into the project => cd ecommerce-shop
+- Install all the necessary dependencies used in the project => npm install
+- Run the develpment server => npm run dev
+- It will run on http://localhost:3000

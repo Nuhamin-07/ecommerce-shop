@@ -1,4 +1,3 @@
-// src/app/favorites/page.tsx - Temporary debug version
 "use client";
 
 import { useAppSelector } from "@/lib/hooks";

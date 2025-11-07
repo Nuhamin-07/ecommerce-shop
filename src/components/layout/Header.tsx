@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import { RootState } from "@/lib/store";
-import { Heart, Home, Plus, Search } from "lucide-react";
+import { Heart, Home, Plus } from "lucide-react";
 
 export default function Header() {
   const favorites = useSelector((state: RootState) => state.favorites.items);
