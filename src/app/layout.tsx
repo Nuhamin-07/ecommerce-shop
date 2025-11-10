@@ -4,6 +4,7 @@ import "./globals.css";
 import StoreProvider from "@/lib/StoreProvider";
 import Header from "@/components/layout/Header";
 import { Toaster } from "sonner";
+import ThemeProvider from "@/components/providers/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,14 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <StoreProvider>
-          <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+          <ThemeProvider>
             <Header />
             <main>{children}</main>
             <Toaster position="top-right" />
-          </div>
+          </ThemeProvider>
         </StoreProvider>
       </body>
     </html>
