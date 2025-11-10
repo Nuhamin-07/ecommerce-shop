@@ -93,7 +93,6 @@ export default function EditProductPage() {
     setLoading(true);
 
     try {
-      // Validate form
       if (
         !form.title.trim() ||
         !form.description.trim() ||

@@ -53,20 +53,16 @@ export const productApi = {
 
       console.log("Raw categories response:", categories);
 
-      // DummyJSON returns an array of strings, but let's handle any case
       if (Array.isArray(categories)) {
         return categories
           .map((category) => {
-            // If it's already a string, use it
             if (typeof category === "string") {
               return category;
             }
-            // If it's an object, try to extract name or slug
             if (typeof category === "object" && category !== null) {
               const catObj = category as any;
               return catObj.name || catObj.slug || "Unknown";
             }
-            // Fallback for any other type
             return String(category || "Unknown");
           })
           .filter((cat) => cat && cat !== "Unknown");

@@ -9,7 +9,6 @@ import { useEffect } from "react";
 export default function FavoritesPage() {
   const favorites = useAppSelector((state) => state.favorites.items);
 
-  // Debug: Check for duplicate keys
   useEffect(() => {
     if (favorites.length > 0) {
       const ids = favorites.map((p) => p.id);
@@ -20,7 +19,6 @@ export default function FavoritesPage() {
         console.log("All favorites:", favorites);
       }
 
-      // Check if any key would be [object Object]
       favorites.forEach((product, index) => {
         if (typeof product.id === "object") {
           console.error("PRODUCT ID IS OBJECT:", product, "at index:", index);

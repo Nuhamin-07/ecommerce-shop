@@ -12,7 +12,6 @@ export default function ThemeProvider({
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    // Get theme from localStorage or system preference
     const savedTheme = localStorage.getItem("theme");
     const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
       .matches

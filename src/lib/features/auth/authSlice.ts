@@ -14,7 +14,6 @@ interface AuthState {
   isLoading: boolean;
 }
 
-// Mock user data
 const mockUser: User = {
   id: 1,
   username: "user",

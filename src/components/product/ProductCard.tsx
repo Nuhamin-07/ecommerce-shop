@@ -28,7 +28,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   };
 
   const handleFavoriteToggle = (e: React.MouseEvent) => {
-    e.stopPropagation(); // Prevent card click when clicking favorite
+    e.stopPropagation();
 
     if (isFavorite) {
       dispatch(removeFromFavorites(product.id));

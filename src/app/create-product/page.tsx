@@ -68,7 +68,6 @@ export default function CreateProductPage() {
     setLoading(true);
 
     try {
-      // Validate form
       if (
         !form.title.trim() ||
         !form.description.trim() ||
@@ -95,7 +94,6 @@ export default function CreateProductPage() {
         return;
       }
 
-      // Create product - DummyJSON will return a mock response
       const response = await productApi.createProduct({
         title: form.title.trim(),
         description: form.description.trim(),
@@ -108,7 +106,6 @@ export default function CreateProductPage() {
       console.log("Product created:", response);
       toast.success("Product created successfully!");
 
-      // Redirect to home page
       router.push("/");
     } catch (error) {
       toast.error("Failed to create product");
