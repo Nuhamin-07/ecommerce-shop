@@ -138,10 +138,6 @@ export default function LoginPage() {
                     "Sign In"
                   )}
                 </Button>
-
-                <div className="text-center text-sm text-muted-foreground">
-                  <p>User credentials: any username/password will work</p>
-                </div>
               </form>
             </TabsContent>
 
